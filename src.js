@@ -18,11 +18,11 @@ class BinaryTree {
         BinaryTree.getterState = false;
         BinaryTree.foundResult = null;
     }
-    getLeftChild = () => this.leftChild;
-    getRightChild = () => this.rightChild;
-    getParent = () => this.parent;
-    setRootVal = (obj) => {this.key = obj;}
-    getRootVal = () => this.key;
+    getLeftChild() {return this.leftChild};
+    getRightChild() {return this.rightChild};
+    getParent() {return this.parent};
+    setRootVal(obj) {this.key = obj;}
+    getRootVal() {return this.key};
     insertLeft(obj){
         if (this.leftChild === null) {
             this.leftChild = new BinaryTree(obj);
